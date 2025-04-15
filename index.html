@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Workshops</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .workshop-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .workshop-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .workshop-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .current {
+            border-top: 4px solid #28a745;
+        }
+        .past {
+            border-top: 4px solid #6c757d;
+        }
+        .workshop-card h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .workshop-year {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .past .workshop-year {
+            color: #6c757d;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #1a252f;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GenBio Workshop</h1>
+        <p>Explore our coming and past workshops</p>
+    </header>
+
+    <div class="workshop-container">
+        <!-- Current Workshop -->
+        <div class="workshop-card current">
+            <h2>Coming Workshop</h2>
+            <p class="workshop-year">2025</p>
+            <p>Join us for our coming workshop on ICML 2025.</p>
+            <a href="2025/" class="btn">Visit 2025 ICML Workshop</a>
+        </div>
+
+        <!-- Past Workshops -->
+        <div class="workshop-card past">
+            <h2>Past Workshop</h2>
+            <p class="workshop-year">2023</p>
+            <a href="2024/" class="btn">Visit 2023 NeurIPS Workshop</a>
+        </div>
+        <!-- Add more past workshops as needed -->
+    </div>
+
+    <footer>
+        <p>© GenBio Workshop Organizers | Built with GitHub Pages</p>
+    </footer>
+</body>
+</html>
