@@ -26,9 +26,21 @@
         }
         .workshop-container {
             display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .section-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+        .cards-row {
+            display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            justify-content: center;
         }
         .workshop-card {
             border: 1px solid #ddd;
@@ -87,19 +99,33 @@
 
     <div class="workshop-container">
         <!-- Current Workshop -->
-        <div class="workshop-card current">
-            <h2>The 2nd Workshop on Generative AI and Biology</h2>
-            <p class="workshop-year">2025</p>
-            <a href="2025/" class="btn">Visit 2025 ICML Workshop</a>
+        <div style="text-align: center;">
+            <p class="section-label">Upcoming</p>
+            <div class="cards-row" style="justify-content: center;">
+                <div class="workshop-card current">
+                    <h2>The 2026 Workshop on Generative and Agentic AI for Biology</h2>
+                    <p class="workshop-year">2026</p>
+                    <a href="2026/" class="btn">Visit 2026 ICML Workshop</a>
+                </div>
+            </div>
         </div>
 
         <!-- Past Workshops -->
-        <div class="workshop-card past">
-            <h2>The 1st Workshop on Generative AI and Biology</h2>
-            <p class="workshop-year">2023</p>
-            <a href="2023/" class="btn">Visit 2023 NeurIPS Workshop</a>
+        <div style="text-align: center;">
+            <p class="section-label">Past Workshops</p>
+            <div class="cards-row" style="justify-content: center;">
+                <div class="workshop-card past">
+                    <h2>The 2nd Workshop on Generative AI and Biology</h2>
+                    <p class="workshop-year">2025</p>
+                    <a href="2025/" class="btn">Visit 2025 ICML Workshop</a>
+                </div>
+                <div class="workshop-card past">
+                    <h2>The 1st Workshop on Generative AI and Biology</h2>
+                    <p class="workshop-year">2023</p>
+                    <a href="2023/" class="btn">Visit 2023 NeurIPS Workshop</a>
+                </div>
+            </div>
         </div>
-        <!-- Add more past workshops as needed -->
     </div>
 
     <footer>
